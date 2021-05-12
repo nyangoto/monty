@@ -72,15 +72,15 @@ typedef struct meta_s
 
 /**
   * struct line - contents of a line and number.
-  * @contents: array of tokens read from line.
+  * @content: array of tokens read from line.
   * @number: line number.
   *
   * Description: structure for data in a line.
   */
 typedef struct line
 {
-	unsigned int number;
 	char **content;
+	unsigned int number;
 } line_t;
 
 /* Critical functions */
