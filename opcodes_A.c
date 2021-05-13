@@ -63,6 +63,7 @@ void pall(stack_t **stack, unsigned int nline)
 void free_stack(stack_t **stack)
 {
 	stack_t *temp = NULL;
+
 	if (stack == NULL || *stack == NULL)
 		return;
 
