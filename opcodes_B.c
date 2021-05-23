@@ -45,7 +45,7 @@ void pop(stack_t **stack, unsigned int nline)
 	if ((*stack)->next != NULL)
 	{
 		*stack = (*stack)->next;
-		free((*stack)->prev;
+		free((*stack)->prev);
 		(*stack)->prev = NULL;
 	}
 	else
@@ -89,7 +89,7 @@ void swap(stack_t **stack, unsigned int nline)
 void pchar(stack_t **stack, unsigned int nline)
 {
 	char c;
-	stack_t = *temp;
+	stack_t *temp;
 
 	if (stack == NULL || *stack == NULL)
 	{
