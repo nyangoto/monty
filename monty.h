@@ -68,7 +68,7 @@ typedef struct meta_s
 	char *buf;
 	stack_t *stack;
 	FILE *file;
-}
+} meta_t;
 
 /**
   * struct line - contents of a line and number.
@@ -77,14 +77,14 @@ typedef struct meta_s
   *
   * Description: structure for data in a line.
   */
-typedef struct line
+typedef struct line_s
 {
 	char **content;
 	unsigned int number;
 } line_t;
 
 /* Critical functions */
-void (*get_op_func(line_t line, meta_t meta))(stack_t **, unsigned int);
+void (*get_op_func(line_t line, meta_t *meta))(stack_t **, unsigned int);
 int _isalpha(int c);
 
 /* Parse functions */
